@@ -1,6 +1,12 @@
-# programme-practise
+### programme-practise
 practise programme
 
 
-# 1.About the prime
-	checkout prime.js
+#### prime.js
+	有这样一个数，它可由两个质数的和组成，且这两个质数不唯一。
+	例如: 10 = 5 + 5 or 10 = 3 + 7
+	问题: 请设计一个程序，输入一个数，判断并输出和等于它的质数对总数
+
+### perfectNumber.js
+	题目: 一个数如果恰好等于它的因子之和，这个数就称为"完数"。
+	例如6=1＋2＋3.编程 找出1000以内的所有完数。 
