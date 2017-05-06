@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div id="root"></div>
+
+	<script>
+	// 假设有一个集合 ['foo', 'bar', 'hello', 'world']，求这个集合里单词组合起来的所有不同的结果
+
+
+		let arr = ['foo', 'bar', 'hello', 'world'];
+
+		let str = '';
+
+		let newArr = [];
+
+		let results = [];
+
+		for (let i = 0; i < 99; i++) {
+			newArr.push(arr.sort(() => {
+				return Math.random() > 0.5 ? 1 : -1;
+			}).join(''));
+
+		}
+
+		unique = args => {
+			for (let i = 0; i < args.length; i++) {
+				if (results.indexOf(args[i]) < 0) {
+					results.push(args[i]);
+				}
+			}
+			return results;
+		}
+
+		// 数组去重
+		// newArr.unique();
+		unique(newArr);
+
+		console.log('the results is:\n');
+
+		results.map(item => {
+			console.log(item);
+		});
+
+
+		console.log(results);
+
+
+	</script>
+</body>
+</html>
